@@ -1,9 +1,11 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Form } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
 import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Tilt from "react-parallax-tilt";
+import { FormattedMessage } from "react-intl";
+import messages from "./messages";
 
 function Home2() {
   return (
@@ -11,31 +13,36 @@ function Home2() {
       <Container>
         <Row>
           <Col md={8} className="home-about-description">
-
             <p className="home-about-body">
-              Programming is my passion, Coding make me feel good... 🤷‍♂️
+              <FormattedMessage {...messages.programming_is} /> 🤷‍♂️
               <br />
-              <br />For web app development, I use languages like
+              <br />
+              <FormattedMessage {...messages.for_web} />
               <i>
                 <b className="purple"> Javascript, PHP </b>
               </i>
               <br />
               <br />
-              My current focus is on Mobile applications development &nbsp;
+              <FormattedMessage {...messages.role} /> &nbsp;
+              <i>
+                <b className="purple">React Native, Flutter and Kotlin</b>
+              </i>
+              <br />
+              <br />
+              <FormattedMessage {...messages.whenever} />
               <i>
                 <b className="purple">
-                 React Native, Flutter and Kotlin
+                  {" "}
+                  Blockchain <FormattedMessage {...messages.and} />
+                  Cloud Computing
                 </b>
               </i>
-              <br />
-              <br />
-              Whenever possible, I also apply my passion for developing skills in
+              &nbsp; <FormattedMessage {...messages.like} />
               <i>
-                <b className="purple"> Blockchain and Cloud Computing</b>
-              </i>
-                &nbsp; like
-              <i>
-                <b className="purple"> Ethereum Blockchain, Google Cloud Platform</b>
+                <b className="purple">
+                  {" "}
+                  Ethereum Blockchain, Google Cloud Platform
+                </b>
               </i>
             </p>
           </Col>
@@ -48,7 +55,7 @@ function Home2() {
         <Row>
           <Col md={12} className="home-about-social">
             <p>
-              Feel free to <span className="purple">connect </span>with me
+              <FormattedMessage {...messages.feel} />
             </p>
             <ul className="home-about-social-links">
               <li className="social-icons">
@@ -58,7 +65,7 @@ function Home2() {
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <i className="fab fa-github"></i>
+                  <i className="fab fa-github" />
                 </a>
               </li>
               <li className="social-icons">
@@ -68,7 +75,7 @@ function Home2() {
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <i className="fab fa-twitter"></i>
+                  <i className="fab fa-twitter" />
                 </a>
               </li>
               <li className="social-icons">
@@ -78,10 +85,9 @@ function Home2() {
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
                 >
-                  <i className="fab fa-linkedin-in"></i>
+                  <i className="fab fa-linkedin-in" />
                 </a>
               </li>
-
             </ul>
           </Col>
         </Row>

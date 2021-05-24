@@ -1,0 +1,12 @@
+{
+  "app.components.navBar.fields.home": " Home",
+  "app.components.navBar.fields.about": " About",
+  "app.components.navBar.fields.resume": " Resume",
+  "app.components.home.fields.programming_is": "Programming is my passion, Coding make me feel good...",
+  "app.components.home.fields.for_web": "For web app development, I use languages like",
+  "app.components.home.fields.role": "My current focus is on Mobile applications development",
+  "app.components.home.fields.and": "and",
+  "app.components.home.fields.like": "like",
+  "app.components.home.fields.whenever": "Whenever possible, I also apply my passion for developing skills in",
+  "app.components.home.fields.feel": "Feel free to connect with me"
+}

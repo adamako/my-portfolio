@@ -1,0 +1,14 @@
+{
+  "app.components.navBar.fields.home": "Accueil",
+  "app.components.navBar.fields.about": " A propos",
+  "app.components.navBar.fields.resume": " Curcullum Vitae",
+  "app.components.home.fields.hi": "Salut !",
+  "app.components.home.fields.me": "Je suis ",
+  "app.components.home.fields.programming_is": "La programmation est ma passion. Je me sens bien dans le codage... ",
+  "app.components.home.fields.for_web": "Pour les applications web, j'utilise les langages comme",
+  "app.components.home.fields.role": "Je suis actuellement concentré sur le développement des applications mobiles",
+  "app.components.home.fields.and": "et",
+  "app.components.home.fields.like": "comme",
+  "app.components.home.fields.whenever": "Quand c'est possible, je développe mes compétences dans le domaine de la",
+  "app.components.home.fields.feel": "N'hésitez pas à me suivre"
+}
