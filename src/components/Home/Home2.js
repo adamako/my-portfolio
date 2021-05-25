@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Form } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 import myImg from "../../Assets/avatar.svg";
 import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
