@@ -5,13 +5,10 @@ import Container from "react-bootstrap/Container";
 import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import logo from "../../Assets/logo.png";
-import fr from "../../Assets/france.png";
-import en from "../../Assets/united-states.png";
 import { Link } from "react-router-dom";
 import { FormattedMessage } from "react-intl";
 import messages from "./messages";
 import { Context } from "../wrapper";
-import { Form, FormControl } from "react-bootstrap";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
