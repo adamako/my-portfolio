@@ -5,8 +5,10 @@ import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Github from "./Github";
 import TechStack from "./TechStack";
-import Aboutcard from "./AboutCard";
+import AboutCard from "./AboutCard";
 import laptopImg from "../../Assets/about.png";
+import { FormattedMessage } from "react-intl";
+import messages from "./messages";
 
 function About() {
   return (
@@ -23,9 +25,12 @@ function About() {
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Know Who <strong className="purple">I'M</strong>
+              <FormattedMessage {...messages.know} />
+              <strong className="purple">
+                <FormattedMessage {...messages.me} />
+              </strong>
             </h1>
-            <Aboutcard />
+            <AboutCard />
           </Col>
           <Col
             md={5}
@@ -36,7 +41,10 @@ function About() {
           </Col>
         </Row>
         <h1 className="project-heading">
-          Professional <strong className="purple">Skillset </strong>
+          <FormattedMessage {...messages.professional} />
+          <strong className="purple">
+            <FormattedMessage {...messages.skill} />
+          </strong>
         </h1>
         <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
           <TechStack iconName="devicon-symfony-original-wordmark " />
@@ -53,7 +61,10 @@ function About() {
           <TechStack iconName="devicon-bootstrap-plain-wordmark" />
         </Row>
         <h1 className="project-heading">
-          <strong className="purple">Tools</strong> I use
+          <strong className="purple">
+            <FormattedMessage {...messages.tools} />
+          </strong>
+          <FormattedMessage {...messages.use} />
         </h1>
         <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
           <TechStack iconName="devicon-linux-plain" />
@@ -63,8 +74,8 @@ function About() {
           <TechStack iconName="devicon-photoshop-line" />
           <TechStack iconName="devicon-intellij-plain" />
           <TechStack iconName="devicon-googlecloud-plain" />
-          <TechStack iconName="devicon-docker-plain-wordmark"/>
-          <TechStack iconName="devicon-trello-plain"/>
+          <TechStack iconName="devicon-docker-plain-wordmark" />
+          <TechStack iconName="devicon-trello-plain" />
         </Row>
         <Github />
       </Container>

@@ -3,6 +3,8 @@ import GitHubCalendar from "react-github-calendar";
 import { Row } from "react-bootstrap";
 import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { FormattedMessage } from "react-intl";
+import messages from "./messages";
 
 function Github() {
   const colourTheme = {
@@ -17,7 +19,10 @@ function Github() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
       <h1 className="project-heading" style={{ paddingBottom: "20px" }}>
-        Github  <strong className="purple">Contributions</strong>
+        <FormattedMessage {...messages.github} />
+        <strong className="purple">
+          <FormattedMessage {...messages.contributions} />
+        </strong>
       </h1>
       <GitHubCalendar
         username="adamako"

@@ -1,85 +1,103 @@
 import React from "react";
-import {Col, Container, Row} from "react-bootstrap";
-import Button from "react-bootstrap/Button";
+import { Col, Container, Row } from "react-bootstrap";
 import Particle from "../Particle";
-import Resumecontent from "./ResumeContent";
+import ResumeContent from "./ResumeContent";
 import "../../style.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import pdf from "../../Assets/Ko-Adama-EN.pdf";
+import { FormattedMessage, useIntl } from "react-intl";
+import messages from "./messages";
 
 function Resume() {
+  const intl = useIntl();
 
-    return (
-        <Container fluid className="resume-section">
-            <Particle/>
-            <Container>
-                <Row style={{justifyContent: "center", position: "relative"}}>
-                    <Button variant="primary" href={pdf} target="_blank">
-                        <i className="fas fa-download">&nbsp;</i>Download CV
-                    </Button>
-                </Row>
-                <Row className="resume">
-                    <Col md={6} className="resume-left">
-                        <h3 className="resume-title">Experience</h3>
-                        <Resumecontent
-                            title="Web and Mobile developer"
-                            date="November 2020, at Declic Africa"
-                            content={[
-                                "Web and Mobile developer at Declic Africa",
-                                "I developed mostly cross-platform app with technologies like flutter, react-native",
-                                "In Web development I use technologies like vueJs, nodeJs, symfony"
-                            ]}
-                        />
+  return (
+    <Container fluid className="resume-section">
+      <Particle />
+      <Container>
+        <Row className="resume">
+          <Col md={6} className="resume-left">
+            <h3 className="resume-title">
+              <FormattedMessage {...messages.experience} />
+            </h3>
+            <ResumeContent
+              title={intl.formatMessage({
+                id: "app.components.resume.fields.exp_title1",
+              })}
+              date={intl.formatMessage({
+                id: "app.components.resume.fields.period_1",
+              })}
+              content={[
+                intl.formatMessage({
+                  id: "app.components.resume.fields.exp_1",
+                }),
+                intl.formatMessage({
+                  id: "app.components.resume.fields.exp_2",
+                }),
+                intl.formatMessage({
+                  id: "app.components.resume.fields.exp_3",
+                }),
+              ]}
+            />
 
-                      <Resumecontent
-                          title="Internship as mobile/web developer"
-                          date="Mars 2020, at Declic Africa"
-                          content={[
-                            "Build mobile applications with flutter. The dashboard was built in JavaScript, vueJs. We use a\n" +
-                            "NoSQL database (firestore) and other firebase technologies.",
-
-                          ]}
-                      />
-                    </Col>
-                    <Col md={6} className="resume-right">
-                        <h3 className="resume-title">Education</h3>
-                        <Resumecontent
-                          title={"Licence"}
-                          date={"2017-2020"}
-                          content={[
-                            "Bachelor of Information Technology at New Dawn University, Burkina Faso 🇧🇫",
-                          ]}
-                        />
-                      <h3 className="resume-title">Learning</h3>
-                      <Resumecontent
-                          title="Ethereum Blockchain"
-                          content={[
-                            "I'm learning to build smarts contracts with Ethereum's Blockchain",
-                          ]}
-                      />
-                      <Resumecontent
-                          title="Docker"
-                          content={[
-                            "I'm learning application containerisation with docker",
-                          ]}
-                      />
-                      <Resumecontent
-                          title="GraphQL"
-                          content={[
-                            "I'm learning to build API with GraphQL and nodeJs",
-                          ]}
-                      />
-
-                    </Col>
-                </Row>
-                <Row style={{justifyContent: "center", position: "relative"}}>
-                    <Button variant="primary" href={pdf} target="_blank">
-                        <i className="fas fa-download">&nbsp;</i>Download CV
-                    </Button>
-                </Row>
-            </Container>
-        </Container>
-    );
+            <ResumeContent
+              title={intl.formatMessage({
+                id: "app.components.resume.fields.exp_title2",
+              })}
+              date={intl.formatMessage({
+                id: "app.components.resume.fields.period_2",
+              })}
+              content={[
+                intl.formatMessage({
+                  id: "app.components.resume.fields.exp_4",
+                }),
+              ]}
+            />
+          </Col>
+          <Col md={6} className="resume-right">
+            <h3 className="resume-title">Education</h3>
+            <ResumeContent
+              title={"Licence"}
+              date={"2017-2020"}
+              content={[
+                intl.formatMessage({
+                  id: "app.components.resume.fields.edu_1",
+                }),
+              ]}
+            />
+            <h3 className="resume-title">
+              <FormattedMessage {...messages.learn} />
+            </h3>
+            <ResumeContent
+              title={intl.formatMessage({
+                id: "app.components.resume.fields.learn_title1",
+              })}
+              content={[
+                intl.formatMessage({
+                  id: "app.components.resume.fields.learn_1",
+                }),
+              ]}
+            />
+            <ResumeContent
+              title="Docker"
+              content={[
+                intl.formatMessage({
+                  id: "app.components.resume.fields.learn_2",
+                }),
+              ]}
+            />
+            <ResumeContent
+              title="GraphQL"
+              content={[
+                intl.formatMessage({
+                  id: "app.components.resume.fields.learn_3",
+                }),
+              ]}
+            />
+          </Col>
+        </Row>
+      </Container>
+    </Container>
+  );
 }
 
 export default Resume;
