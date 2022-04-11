@@ -47,7 +47,7 @@ function About() {
           </strong>
         </h1>
         <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-          <TechStack iconName="devicon-symfony-original-wordmark " />
+          {/*<TechStack iconName="devicon-symfony-original-wordmark " />*/}
           <TechStack iconName="devicon-kotlin-plain-wordmark" />
           <TechStack iconName="devicon-flutter-plain" />
           <TechStack iconName="devicon-graphql-plain" />
