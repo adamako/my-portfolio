@@ -24,13 +24,7 @@ function Github() {
           <FormattedMessage {...messages.contributions} />
         </strong>
       </h1>
-      <GitHubCalendar
-        username="adamako"
-        blockSize={15}
-        blockMargin={5}
-        theme={colourTheme}
-        fontSize={16}
-      />
+      <GitHubCalendar username="adamako" />
     </Row>
   );
 }
