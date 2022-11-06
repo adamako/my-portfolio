@@ -11,19 +11,21 @@ function Type() {
           context.locale === "en"
             ? [
                 "Mobile Developer",
+                "Cloud DevOps Engineer",
                 "Web Developer",
                 "Learning Blockchain Technology",
                 "Open Source Contributor",
               ]
             : [
                 "Devéloppeur Mobile",
+                "Ingénieur Cloud DevOPs",
                 "Devéloppeur Web",
                 "J'apprends la technologie de la blockchain",
                 "Je contribue aux projets libres",
               ],
         autoStart: true,
         loop: true,
-        deleteSpeed: 50,
+        deleteSpeed: 30,
       }}
       onInit={""}
     />
