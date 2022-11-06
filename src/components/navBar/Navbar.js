@@ -69,16 +69,16 @@ function NavBar() {
             {/*        <i className="fab fa-codepen"/> Projects*/}
             {/*    </Nav.Link>*/}
             {/*</Nav.Item>*/}
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/resume"
-                onClick={() => updateExpanded(false)}
-              >
-                <i className="far fa-file-alt" />
-                <FormattedMessage {...messages.resume} />
-              </Nav.Link>
-            </Nav.Item>
+            {/*<Nav.Item>*/}
+            {/*  <Nav.Link*/}
+            {/*    as={Link}*/}
+            {/*    to="/resume"*/}
+            {/*    onClick={() => updateExpanded(false)}*/}
+            {/*  >*/}
+            {/*    <i className="far fa-file-alt" />*/}
+            {/*    <FormattedMessage {...messages.resume} />*/}
+            {/*  </Nav.Link>*/}
+            {/*</Nav.Item>*/}
             <Nav.Item className={"select"}>
               <Nav.Link>
                 <select

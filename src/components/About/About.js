@@ -48,17 +48,24 @@ function About() {
         </h1>
         <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
           {/*<TechStack iconName="devicon-symfony-original-wordmark " />*/}
+          <TechStack iconName="devicon-react-original-wordmark" />
           <TechStack iconName="devicon-kotlin-plain-wordmark" />
           <TechStack iconName="devicon-flutter-plain" />
           <TechStack iconName="devicon-graphql-plain" />
           <TechStack iconName="devicon-nodejs-plain-wordmark " />
-          <TechStack iconName="devicon-react-original-wordmark" />
+          <TechStack iconName="devicon-typescript-plain" />
+          <TechStack iconName="devicon-terraform-plain" />
+          <TechStack iconName="devicon-ansible-plain" />
+          <TechStack iconName="devicon-kubernetes-plain" />
+          <TechStack iconName="devicon-jenkins-plain" />
+          <TechStack iconName="devicon-circleci-plain" />
+          <TechStack iconName="devicon-prometheus-original" />
+          <TechStack iconName="devicon-amazonwebservices-plain" />
           <TechStack iconName="devicon-mongodb-plain-wordmark" />
           <TechStack iconName="devicon-firebase-plain-wordmark" />
+          <TechStack iconName="devicon-postgresql-plain" />
           <TechStack iconName="devicon-git-plain-wordmark" />
-          <TechStack iconName="devicon-typescript-plain" />
           <TechStack iconName="devicon-bash-plain" />
-          <TechStack iconName="devicon-bootstrap-plain-wordmark" />
         </Row>
         <h1 className="project-heading">
           <strong className="purple">
